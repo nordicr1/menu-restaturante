@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+header nav{
+    background-color: #000;
+    padding: 10px 0;
+}
+
+header nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+header .hero{
+    background-image: url(../img/bg-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .hero #formSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero #formSearch input{
+    width: 70vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    text-align: center;
+    
+}
+
+main{
+    margin: 20px 0px;
+}
+
+main .container h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+}
+
+main .container .pratos{
+    display: flex;
+    flex-direction: column;
+}
+
+.prato{
+    background-color: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: 0.3s ease;
+}
+
+.prato:hover{
+    background-color: #f5f5f5;
+}
+
+.prato img{
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 10px;
+}
+
+.prato h4{
+    padding: 0px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.prato p{
+    padding: 0px 20px;
+    font-size: 1rem;
+}
+
+.prato button{
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, .3);
+    transition: 0.3s ease;
+}
+
+.prato button:hover{
+    background-color: #dedede;
+    color: #000;
+}
+
+footer{
+    padding: 10px 0px;
+}
+
+footer .container p{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (min-width: 600px){
+    main .container .pratos{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    main .container .pratos .prato{
+        width: 300px;
+    }
+}
+
+/* contatiner */
+
+.container{
+    width: 90vw;
+    margin: 0px auto;
+}
